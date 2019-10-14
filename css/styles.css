@@ -1,0 +1,982 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ITC Cheltenham";
+  src: url("https://db.onlinewebfonts.com/t/88e9a8c5df7ede60164bdce25bd4a641.eot");
+  src:
+    url("https://db.onlinewebfonts.com/t/88e9a8c5df7ede60164bdce25bd4a641.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/88e9a8c5df7ede60164bdce25bd4a641.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/88e9a8c5df7ede60164bdce25bd4a641.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/88e9a8c5df7ede60164bdce25bd4a641.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/88e9a8c5df7ede60164bdce25bd4a641.svg#ITC%20Cheltenham") format("svg");
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/libre-franklin-v4-latin-regular.eot');
+  src:
+    local('Libre Franklin'),
+    local('LibreFranklin-Regular'),
+    url('../fonts/libre-franklin-v4-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/libre-franklin-v4-latin-regular.woff2') format('woff2'),
+    url('../fonts/libre-franklin-v4-latin-regular.woff') format('woff'),
+    url('../fonts/libre-franklin-v4-latin-regular.ttf') format('truetype'),
+    url('../fonts/libre-franklin-v4-latin-regular.svg#LibreFranklin') format('svg');
+}
+
+@font-face {
+  font-family: "Imperial";
+  src: url("//db.onlinewebfonts.com/t/96880a6e9325deaf192d8c9f268c6f47.eot");
+  src:
+    url("//db.onlinewebfonts.com/t/96880a6e9325deaf192d8c9f268c6f47.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/96880a6e9325deaf192d8c9f268c6f47.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/96880a6e9325deaf192d8c9f268c6f47.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/96880a6e9325deaf192d8c9f268c6f47.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/96880a6e9325deaf192d8c9f268c6f47.svg#Imperial") format("svg");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif, Arial;
+  font-size: 1.6rem;
+  margin-top: 4.6rem;
+}
+
+.navbar {
+  background-color: white;
+  border-bottom: 0.1rem solid #e2e2e2;
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-items-box {
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 1.5rem 0.2rem;
+}
+
+.navbar-items {
+  font-size: 1.28rem;
+  font-weight: 700;
+  height: 100%;
+}
+
+.menu-box {
+  display: none;
+}
+
+.svg-logo-box {
+  height: 2.6rem;
+  width: 18.5rem;
+}
+
+.subject-link {
+  display: none;
+  margin-left: 2rem;
+  color: black;
+  text-decoration: none;
+  font-size: 1.41rem;
+}
+
+.navbar-account-btn {
+  border: 0.1rem solid #326891;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  min-width: 6.5rem;
+  transition: ease 0.6s;
+  background-color: #6288a5;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 1.1rem 1.2rem 0.8rem;
+}
+
+.navbar-account-btn:hover {
+  background-color: #326891;
+}
+
+.navbar-account-btn:visited {
+  background-color: #326891;
+}
+
+.navbar-menu-btn {
+  cursor: pointer;
+  border: none;
+  height: 3rem;
+  width: 3rem;
+  transition: ease 0.6s;
+  background-color: #fff;
+}
+
+.navbar-menu-btn:hover {
+  background-color: #f7f7f7;
+}
+
+.btn-margin-left {
+  display: none;
+  margin-left: 0.5rem;
+}
+
+.subscribe-btn {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .menu-box {
+    display: initial;
+  }
+}
+
+@media (min-width: 740px) {
+  .subscribe-btn {
+    display: initial;
+  }
+
+  .menu-box {
+    margin-right: 15.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-items-box {
+    max-width: 160.5rem;
+    margin: 0 auto;
+  }
+
+  .menu-box {
+    margin-right: 0;
+  }
+
+  .btn-margin-left {
+    display: initial;
+  }
+
+  .subject-link {
+    display: initial;
+  }
+}
+
+.headline {
+  display: block;
+  margin-top: 10rem;
+}
+
+.article-title {
+  font-family: "ITC Cheltenham", "times new roman", times, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 3.8rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.title-wrapper {
+  display: inline-block;
+}
+
+.caption {
+  color: grey;
+  font-family: "ITC Cheltenham", "times new roman", times, serif;
+  font-size: 1.56rem;
+  font-weight: 600;
+}
+
+.credit {
+  color: grey;
+  font-size: 1.3rem;
+}
+
+.photo-box {
+  display: block;
+  margin: 2.5rem auto 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .photo-box {
+    width: 94.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .photo-box {
+    width: 120rem;
+  }
+}
+
+.photo {
+  width: inherit;
+}
+
+.title-photo {
+  width: inherit;
+}
+
+.art-details-box {
+  width: 100%;
+  height: 9.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.art-details-wrapper {
+  height: 6.2rem;
+  width: 60rem;
+}
+
+.terms-link {
+  display: inline;
+}
+
+.terms-anchor {
+  color: #8e8e8e;
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+
+.terms-nyt-link a {
+  padding: 0;
+}
+
+.body-doc a {
+  color: #326891;
+}
+
+.terms-anchor:hover {
+  text-decoration: underline #8e8e8e;
+}
+
+.copy-details-a {
+  color: #8e8e8e;
+}
+
+.copy-details-a:hover {
+  color: #8e8e8e;
+  text-decoration: none;
+}
+
+.stats-btn-box > a::before {
+  border-color: rgb(102, 102, 102) transparent;
+  border-style: solid;
+  bottom: -0.2rem;
+  border-width: 0.6rem 0 0 0.8rem;
+  content: "";
+  display: block;
+  left: 1.5rem;
+  width: 0;
+  position: absolute;
+}
+
+.stats-btn-box > a::after {
+  border-color: rgb(255, 255, 255) transparent;
+  border-style: solid;
+  border-width: 0.6rem 0 0 0.6rem;
+  bottom: -0.1rem;
+  content: "";
+  display: block;
+  left: 1.6rem;
+  position: absolute;
+  width: 0;
+}
+
+.stats-btn-box > a:hover::before {
+  border-color: rgb(197, 197, 197) transparent;
+  border-style: solid;
+  bottom: -0.2rem;
+  border-width: 0.6rem 0 0 0.8rem;
+  content: "";
+  display: block;
+  left: 1.5rem;
+  width: 0;
+  position: absolute;
+}
+
+.stats-btn-box-a {
+  cursor: pointer;
+  display: flex;
+  color: #000;
+  min-width: 2.6rem;
+  min-height: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid #666;
+  width: 3.6rem;
+  height: 2.3rem;
+  text-decoration: none;
+  border-radius: 0.4rem;
+}
+
+.author-box > a {
+  color: #333;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+}
+
+.social-btn-box-a {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  color: #000;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.author-box > a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.stats-btn-box-a:hover {
+  border: 0.1rem solid #c5c5c5;
+}
+
+.social-btn-box-a:hover {
+  background-color: #fff;
+  border: 0.2rem solid #eee;
+}
+
+.social-btn-box {
+  width: 2.7rem;
+}
+
+.author-box {
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 0.032rem;
+}
+
+.stats-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.published-date-box {
+  display: inline;
+  font-size: 1.2rem;
+  height: 100%;
+  margin-bottom: 1.1rem;
+}
+
+.social-links-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 24.2rem;
+  height: 4rem;
+}
+
+@media (max-width: 650px) {
+  .art-details-wrapper {
+    width: 95%;
+  }
+
+  .social-links-box {
+    width: 15.5rem;
+  }
+
+  .email-box {
+    display: none;
+  }
+
+  .share-box {
+    display: none;
+  }
+}
+
+.bm-btn-box {
+  width: 1.6rem;
+}
+
+.stats-btn-box {
+  width: 3.6rem;
+  position: relative;
+}
+
+.social-height {
+  height: 2.7rem;
+}
+
+.comment-btn {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+
+ul.social-menu {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-menu-item {
+  display: inline;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem 0;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.social-menu-btn {
+  border: none;
+  background: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 auto;
+}
+
+.social-menu-share {
+  margin-right: 0;
+}
+
+.social-menu-share button {
+  border: none;
+  background: none;
+}
+
+.main-art-box {
+  color: #333;
+  font-family: "Imperial", sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 740px) {
+  .main-art-box {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+}
+
+.body-wrapper {
+  display: flex;
+  width: 86.4%;
+  margin: 0 auto;
+}
+
+.body-doc {
+  margin-left: calc((100% - 60rem) / 2);
+  margin-right: 0;
+  width: 60rem;
+}
+
+.news-related-box {
+  display: none;
+}
+
+.news-related-content {
+  height: 20rem;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .news-related-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0;
+    width: 13.3%;
+  }
+
+  .news-related-content {
+    float: right;
+  }
+}
+
+@media (max-width: 640px) {
+  .body-wrapper {
+    width: 100%;
+  }
+
+  .body-doc {
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+
+.body-doc p {
+  margin: 0 0 1.5rem 0;
+  width: 100%;
+}
+
+.img-example {
+  display: flex;
+  justify-content: left;
+  margin-left: 2rem;
+  overflow: hidden;
+}
+
+.img-example-wrapper {
+  width: 94.64rem;
+  height: 100%;
+}
+
+.img-example-header {
+  font-family: "ITC Cheltenham", sans-serif;
+  margin-bottom: 1.7rem;
+  display: block;
+  width: 100%;
+}
+
+.img-example-title {
+  margin-top: 2rem;
+  width: 100%;
+  display: block;
+  font-size: 2rem;
+  font-family: "ITC Cheltenham", sans-serif;
+  font-weight: bolder;
+}
+
+.img-example-caption {
+  color: #333;
+  display: block;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  width: 90%;
+}
+
+.desc-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 1rem;
+  min-width: 72rem;
+  height: 64.8rem;
+  width: 72rem;
+  background-image: url("../img/inflation-720.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.box {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+}
+
+.desc-box-subtitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  .img-example {
+    justify-content: center;
+  }
+
+  .desc-box {
+    height: 57.6rem;
+    width: 94.5rem;
+    background-image: url("../img/the-theory-of-inflation.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.img-example-footer {
+  text-align: left;
+  font-size: 1.4rem;
+  margin-top: 6rem;
+  width: 100%;
+  height: 4rem;
+}
+
+.video-box {
+  width: 100%;
+  margin: 4.3rem auto;
+}
+
+.video-player {
+  width: inherit;
+  height: 31.9rem;
+}
+
+.video-embed {
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.art-caption {
+  color: #888;
+  margin: 1rem 2rem 0 0;
+  text-align: left;
+  line-height: 1.8rem;
+  letter-spacing: 0.016rem;
+}
+
+.art-caption-desc {
+  margin-right: 0.7rem;
+  font-size: 1.2rem;
+  font-family: "Imperial", serif;
+}
+
+.art-caption-credit {
+  font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+  .video-box {
+    width: 60rem;
+  }
+}
+
+.telescope-figure {
+  display: flex;
+  margin: 3.7rem 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.telescope-img-box {
+  width: 60rem;
+}
+
+@media (max-width: 600px) {
+  .telescope-img-box {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .telescope-img-box {
+    width: 72rem;
+  }
+
+  .telescope-fill {
+    display: none;
+  }
+}
+
+.telescope-img {
+  width: 100%;
+}
+
+.art-footer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.social-icons-box {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  width: 15.5rem;
+  height: 2.7rem;
+}
+
+.read-comment-btn {
+  border: 1px solid rgb(50, 104, 145);
+  background: #6288a5;
+  box-shadow: none;
+  border-radius: 3px;
+  color: white;
+  display: block;
+  font-family: "Libre Franklin", helvetica, arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  line-height: 2.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  transition: background-color 0.6s ease 0s;
+  width: 100%;
+  height: 3.6rem;
+}
+
+.btn-read-box {
+  display: block;
+  width: 100%;
+}
+
+.copy-details {
+  color: #8e8e8e;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+
+.comment-box {
+  margin-top: 2.6rem;
+}
+
+.wrapper {
+  width: 60rem;
+  margin-left: 1.1rem;
+  margin-right: 1.1rem;
+}
+
+@media (min-width: 600px) {
+  .comment-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.6rem;
+  }
+
+  .social-icons-box {
+    margin-top: 0;
+  }
+
+  .btn-read-box {
+    width: 33rem;
+  }
+}
+
+.footer-divider {
+  margin-top: 2.8rem;
+  color: white;
+}
+
+.navbar-footer-box {
+  border-top: 0.1rem solid rgb(226, 226, 226);
+  display: block;
+  margin: 0 auto;
+  margin-top: 2.4rem;
+  width: 95%;
+}
+
+.navbar-footer-header {
+  margin-top: 2.8rem;
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-header-link {
+  font-size: 1.1rem;
+  color: #6288a5;
+}
+
+.section-title {
+  text-transform: uppercase;
+}
+
+.section-title-btn {
+  padding-top: 1.4rem;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 4.6rem;
+}
+
+.section-title-text {
+  display: none;
+  width: 100%;
+  height: 4.6rem;
+}
+
+.news-subgroup {
+  display: none;
+  list-style: none;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+}
+
+.section-title:focus ~ .news-subgroup {
+  display: grid;
+}
+
+.subsection-link {
+  color: #000;
+  font-family: "Libre Franklin", sans-serif;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 3rem;
+  padding: 0.5rem 0;
+  text-transform: capitalize;
+}
+
+.box-divider {
+  border-top: 0.1rem solid #e2e2e2;
+}
+
+.sub-icons {
+  width: 1.3rem;
+  margin-right: 0.5rem;
+}
+
+.bold-link {
+  font-weight: 900;
+}
+
+.pdg-left {
+  padding-left: 1.2rem;
+}
+
+.subscribe {
+  display: none;
+}
+
+.terms-footer {
+  display: block;
+  padding: 1.6rem 0 2.5rem 0;
+  font-size: 1rem;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 0.8rem;
+  border-top: 0.1rem solid #e2e2e2;
+}
+
+.termslist {
+  list-style: none;
+  font-size: inherit;
+  display: block;
+  text-align: center;
+}
+
+.terms-nyt-link {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 1150px) {
+  .box-divider {
+    border: 0;
+  }
+
+  .terms-nyt-link {
+    display: inline;
+  }
+
+  .section-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 21.5rem;
+    grid-template-rows: 1fr;
+    margin: 0.5rem auto;
+    grid-gap: 4.5rem;
+    width: 100%;
+    max-width: 120rem;
+  }
+
+  .section-title {
+    height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .section-title-btn {
+    color: black !important;
+    pointer-events: none;
+    padding-top: 0;
+    display: inline;
+  }
+
+  .news-subgroup {
+    display: grid !important;
+    grid-template-rows: repeat(13, 1fr);
+    grid-template-columns: 1fr;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  .nyt-sections {
+    margin-top: 0.7rem;
+  }
+
+  .subsection-link {
+    height: 2.5rem;
+    padding: 0;
+  }
+
+  .grey-vert-line {
+    border-left: 0.1rem solid #e2e2e2;
+  }
+
+  .sections-divider {
+    display: none;
+  }
+
+  .navbar-footer-header {
+    max-width: 120rem;
+    margin: 0 auto;
+    height: 5.2rem;
+  }
+
+  .navbar-footer-box {
+    border-bottom: none;
+  }
+
+  .subs-ul {
+    list-style: none;
+    font-size: 1.3rem;
+  }
+
+  .other-channels-top {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 1rem;
+    list-style: none;
+    font-size: 1.1rem;
+    color: #333;
+    height: 7.5rem;
+  }
+
+  .other-channels-top > li:last-child {
+    border-bottom: 0.1rem solid #e2e2e2;
+  }
+
+  .other-channels-bottom {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 1rem;
+    list-style: none;
+    font-size: 1.1rem;
+    color: #333;
+    height: 10.8rem;
+  }
+
+  .other-channel-link {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .other-channel-link:hover {
+    text-decoration: underline #000;
+  }
+
+  .news-subgroup li:nth-last-child(-n+4) {
+    display: none;
+  }
+
+  .subscribe {
+    display: initial;
+  }
+}
