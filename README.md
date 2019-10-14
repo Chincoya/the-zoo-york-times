@@ -40,8 +40,8 @@ firefox index.html
 
 ### Authors:
 
-- Cmauricio Parra | [@cma4c](twitter.com/@cma4c)
-- Daniel Chincoya | [@chincoya7](twitter.com/chincoya7)
+- Cmauricio Parra | [@cma4c](https://twitter.com/@cma4c)
+- Daniel Chincoya | [@chincoya7](https://twitter.com/chincoya7)
 
 ### License
 
